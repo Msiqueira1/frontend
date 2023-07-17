@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+/* import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
 
@@ -25,7 +25,27 @@ body {
   max-width: 2000px;
   margin: 20px auto;
   word-break: break-all;
-} */
+}
 `;
 
-export default Global
+export default Global */
+
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, Helvetica, Sans-serif
+}
+`;
+
+export default GlobalStyle;
